@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">HIstoryA</string>
+    <string name="hello_world">Hello world!</string>
+    
+    <!-- Log In Variables-->
+    <string name="label_username">Email</string>
+    <string name="label_password">Password</string>
+    <string name="label_login">Log In</string>
+	<string name="label_appname">HIstoryA</string>
+    
+    <!-- Register Variables -->
+    <string name="label_signup">Sign Up</string>
+    <string name="label_regname">Name</string>
+    <string name="label_regusername">User Name</string>
+    <string name="label_regemail">Email or Facebook</string>
+    
+    
+    <!-- Main Page Variables -->
+    <string name="label_button_Profile">Profile</string>
+    <string name="label_button_Settings">Settings</string>
+    <string name="label_button_QR">Scan QR Code</string>
+    <string name="label_button_Tracks">Tracks</string>
+    
+    <!-- Profile Activity Variables-->
+    <string-array name="trail_array">
+	    <item>Taal Heritage Trail</item>
+	</string-array> 
+    
+    <!-- ScanType Activity Variables -->
+    <string name="username">USER</string>
+    
+    <!-- Trails Activity Variables -->
+    <string name="trail_info">\tWelcome to one of the Philippines’ oldest towns – Taal, Batangas!\n
+				 \n\tIf there’s Taal Lake and Taal Volcano, then there’s Taal Heritage Town.\n
+				 \n\tEstablished in 1572 by Spanish missionaries, Taal is home to a number of esteemed Filipinos who played important roles in the Philippine revolution and in the shaping of our country.\n
+				 \n\tTake a walk around Taal and discover why this town was considered one of the most influential towns of its time.\n
+				 \n\tThe Taal Heritage Trail begins at the Don Gregorio Agoncillo House and ends at the Gen. Anianas Diokno House. 
+				 Along the way, stop by the Minor Basilica of St. Martin of Tours, Escuela Pia, Galleria Taal, Museo ni Leon Apacible, Galleria Orlina, and the Museo ni Marcela Agoncillo.\n
+				 \n\tTaal’s stories are ready to be told with the Heritage Information Adventure App!\n
+				 \n\tThere’s more to discover.</string>
+    
+    <!-- Location Tab Variables -->
+    <string name="label_button_image">Image</string>
+    <string name="label_button_music">Music</string>
+    <string name="label_button_video">Video</string>
+    
+    <!-- Menu Variables -->
+    <string name="action_home">Home</string>
+    <string name="action_profile">Profile</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_trail">Trail</string>
+    <string name="action_scan">Scan</string>
+    <string name="action_logout">Logout</string>
+    
+    
+  
+</resources>

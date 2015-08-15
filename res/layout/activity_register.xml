@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <RelativeLayout
+        android:id="@+id/relativeLayoutTrans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="@string/label_regname"
+                android:textAppearance="?android:attr/textAppearance"
+                android:textColor="@color/brown_dark"
+                android:typeface="sans" />
+
+            <EditText
+                android:id="@+id/regname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:ems="5"
+                android:gravity="center_vertical|center_horizontal"
+                android:inputType="text"
+                android:minWidth="150dp"
+                android:singleLine="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="@string/label_regemail"
+                android:textAppearance="?android:attr/textAppearance"
+                android:textColor="@color/brown_dark"
+                android:typeface="sans" />
+
+            <EditText
+                android:id="@+id/regemail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:ems="5"
+                android:gravity="center_vertical|center_horizontal"
+                android:inputType="text"
+                android:minWidth="150dp"
+                android:singleLine="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="@string/label_password"
+                android:textAppearance="?android:attr/textAppearance"
+                android:textColor="@color/brown_dark"
+                android:typeface="sans" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:ems="5"
+                android:gravity="center_vertical|center_horizontal"
+                android:inputType="textPassword"
+                android:minWidth="150dp"
+                android:singleLine="true" />
+
+            <Button
+                android:id="@+id/submitButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@color/brown_dark"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/label_signup"
+                android:textAppearance="?android:attr/textAppearance"
+                android:textColor="@color/yellow_dark" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

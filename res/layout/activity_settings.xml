@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="50dp"
+        android:orientation="vertical" >
+
+	    <Button
+	        android:id="@+id/set_update"
+	        android:layout_width="wrap_content"
+	        android:layout_height="30dp"
+	        android:layout_marginTop="72dp"
+	        android:background="@layout/buttonsetupdate" />
+	
+	    <TextView
+	        android:id="@+id/textView1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="25dp"
+	        android:text="Version Alpha"
+	        android:textAppearance="?android:attr/textAppearanceSmall" />
+	</LinearLayout>
+
+	<LinearLayout
+	    android:id="@+id/LinearLayout2"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentRight="true"
+	    android:orientation="vertical" >
+		<ImageView
+		    android:layout_width="164dp"
+		    android:layout_height="164dp"
+		    android:layout_marginRight="22dp"
+		    android:layout_marginTop="13dp"
+		    android:background="@raw/logo" />
+		
+    </LinearLayout>
+
+	<LinearLayout
+	    android:id="@+id/LinearLayout3"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/LinearLayout1"
+	    android:layout_alignLeft="@+id/LinearLayout1"  
+	    android:orientation="vertical" >
+		<TextView
+	        android:id="@+id/textView2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="100dp"
+	        android:text="Skins"
+	        android:textAppearance="?android:attr/textAppearanceSmall" />
+   	</LinearLayout>
+	<LinearLayout
+	    android:id="@+id/LinearLayout4"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/LinearLayout2"  
+	    android:layout_alignLeft="@+id/LinearLayout2"
+	    android:layout_alignBottom="@+id/LinearLayout3"  	    
+	    android:orientation="vertical" >
+
+	    <Spinner
+	        android:id="@+id/set_skins"
+	        android:layout_width="115dp"
+	        android:layout_height="25dp"
+	        android:layout_marginTop="62dp"
+	        android:background="@drawable/profileinput_box"
+	        android:spinnerMode="dropdown"
+	        android:textSize="12sp"
+	        android:typeface="sans" />
+
+   	</LinearLayout>
+				
+</RelativeLayout>

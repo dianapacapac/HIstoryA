@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_interest_trails"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:columnCount="10"
+        android:orientation="horizontal" >
+    </RelativeLayout>
+
+    <RelativeLayout 
+        android:id="@+id/rl_interest_trails"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/rl_interest_trails"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal" >
+        
+        
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/interest_textview"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/rl_interest_trails"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="60dp"
+        android:layout_toLeftOf="@+id/interestButton02"
+        android:singleLine="false"
+        android:textSize="9dp"
+        android:typeface="sans" />
+
+    <Button
+        android:id="@+id/interestButton02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/interest_textview"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/button_style"
+        android:minWidth="100dp"
+        android:text="Partner Link"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/interestButton01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/interestButton02"
+        android:layout_below="@+id/interestButton02"
+        android:background="@drawable/button_style"
+        android:minWidth="100dp"
+        android:text="Partner Link"
+        android:textSize="10sp"/>
+
+    <Button
+        android:id="@+id/interestbutton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/interestButton01"
+        android:layout_below="@+id/interestButton01"
+        android:background="@drawable/button_style"
+        android:minWidth="100dp"
+        android:text="Partner Link"
+        android:textSize="10sp" />
+
+    <ImageView
+        android:id="@+id/interestimageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/interestbutton1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/interestbutton1"
+        android:layout_below="@+id/interestbutton1"
+        android:adjustViewBounds="true"
+        android:src="@drawable/morefun_logo" />
+    
+</RelativeLayout>

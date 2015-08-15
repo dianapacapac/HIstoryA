@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/fl_trails"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@raw/map2"
+        android:columnCount="10"
+        android:orientation="horizontal" >
+        
+        <Button
+            android:id="@+id/marker1"
+            android:layout_width="24dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="75dp"
+            android:layout_marginRight="80dp"
+            android:background="@raw/marker1"
+            android:onClick="marker1" />
+        
+        <Button
+            android:id="@+id/marker2"
+            android:layout_width="24dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="35dp"
+            android:background="@raw/marker2" 
+            android:onClick="marker2"/>
+
+        <Button
+            android:id="@+id/marker3"
+            android:layout_width="24dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="57dp"
+            android:layout_marginTop="48dp"
+            android:background="@raw/marker3" 
+            android:onClick="marker3"/>
+
+        <Button
+            android:id="@+id/interestpoint1"
+            android:layout_width="15dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="80dp"
+            android:layout_marginLeft="30dp"
+            android:background="@raw/interestpoint"
+            android:onClick="iP1Action"/>
+        
+		<Button
+		    android:id="@+id/interestpoint2"
+		    android:layout_width="15dp"
+		    android:layout_height="30dp"
+		    android:layout_alignParentLeft="true"
+		    android:layout_alignParentTop="true"
+		    android:layout_marginLeft="133dp"
+		    android:layout_marginTop="73dp"
+		    android:background="@raw/interestpoint1"
+		    android:onClick="iP2Action" />
+
+		<Button
+		    android:id="@+id/interestpoint3"
+		    android:layout_width="15dp"
+		    android:layout_height="30dp"
+		    android:layout_alignParentRight="true"
+		    android:layout_alignParentTop="true"
+		    android:layout_marginRight="98dp"
+		    android:layout_marginTop="50dp"
+		    android:background="@raw/interestpoint" 
+		    android:onClick="iP3Action"/>
+		
+		<Button
+		    android:id="@+id/interestpoint4"
+		    android:layout_width="15dp"
+		    android:layout_height="30dp"
+		    android:layout_alignParentRight="true"
+		    android:layout_alignParentTop="true"
+		    android:layout_marginRight="75dp"
+		    android:layout_marginTop="55dp"
+		    android:background="@raw/interestpoint" 
+		    android:onClick="iP4Action"/>
+		
+		<Button
+		    android:id="@+id/interestpoint5"
+		    android:layout_width="15dp"
+		    android:layout_height="30dp"
+		    android:layout_alignParentLeft="true"
+		    android:layout_alignParentTop="true"
+		    android:layout_marginLeft="75dp"
+		    android:layout_marginTop="78dp"
+		    android:background="@raw/interestpoint1" 
+		    android:onClick="iP5Action"/>
+				    </RelativeLayout>
+
+    <RelativeLayout 
+        android:id="@+id/fl_trails_info"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/fl_trails"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/trail2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="116dp"
+            android:layout_marginTop="30dp"
+            android:clickable="false"
+            android:visibility="visible" />
+
+        <CheckBox
+            android:id="@+id/trail1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/trail2"
+            android:layout_marginLeft="104dp"
+            android:layout_marginTop="18dp"
+            android:layout_toRightOf="@+id/trail2"
+            android:clickable="false"
+            android:visibility="visible" />
+
+        <CheckBox
+            android:id="@+id/trail3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/trail2"
+            android:layout_marginLeft="53dp"
+            android:layout_marginTop="14dp"
+            android:clickable="false"
+            android:visibility="visible" />
+        
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/trails_textview"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/fl_trails"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="17dp"
+        android:layout_toLeftOf="@+id/imageView1"
+        android:singleLine="false"
+        android:text="@string/trail_info"
+        android:textSize="9dp"
+        android:typeface="sans" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/trails_textview"
+        android:layout_alignLeft="@+id/button1"
+        android:layout_alignParentRight="true"
+        android:adjustViewBounds="true"
+        android:src="@drawable/morefun_logo" />
+
+    <Button
+        android:id="@+id/Button02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/trails_textview"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/button_style"
+        android:minWidth="100dp"
+        android:text="Partner Link"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/Button01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Button02"
+        android:layout_below="@+id/Button02"
+        android:background="@drawable/button_style"
+        android:minWidth="100dp"
+        android:text="Partner Link"
+        android:textSize="10sp"/>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Button01"
+        android:layout_below="@+id/Button01"
+        android:background="@drawable/button_style"
+        android:minWidth="100dp"
+        android:text="Partner Link"
+        android:textSize="10sp" />
+
+</RelativeLayout>

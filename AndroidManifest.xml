@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.historya"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="19" />
+    
+    <uses-permission android:name="android.permission.CAMERA"/>
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission   android:name="android.permission.WRITE_INTERNAL_STORAGE"/>
+	
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:label="@string/app_name"
+            android:name="com.example.historya.LogInActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:parentActivityName="com.example.historya.LogInActivity" 
+            android:name="com.example.historya.RegisterActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <activity
+            android:name="com.example.historya.MainActivity"
+ 			android:screenOrientation="portrait">
+        </activity>
+        
+        <activity
+            android:parentActivityName="com.example.historya.MainActivity"
+            android:name="com.google.zxing.client.android.CaptureActivity"               
+            android:screenOrientation="landscape"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden">
+               <intent-filter>
+                  <action android:name="com.google.zxing.client.android.SCAN"/>
+                  <category android:name="android.intent.category.DEFAULT"/>
+               </intent-filter>
+        </activity>
+        
+        <!-- Profile Activity -->
+        <activity
+            android:parentActivityName="com.example.historya.MainActivity"
+            android:name="com.example.historya.ProfileActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <!-- Settings Activity -->
+		<activity
+            android:parentActivityName="com.example.historya.MainActivity"
+            android:name="com.example.historya.SettingsActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <activity
+            android:parentActivityName="com.example.historya.MainActivity"
+            android:name="com.example.historya.TrailTypeActivity"
+            >
+        </activity>
+        
+        
+         <!--  Trails Activity -->
+        <activity 
+            android:name="com.example.historya.TrailsActivity" 
+            android:screenOrientation="portrait"/>
+        
+        <activity
+            android:parentActivityName="com.example.historya.TrailsActivity"
+            android:name="com.example.historya.InterestActivity"
+            android:screenOrientation="portrait"></activity>
+         
+        <activity
+            android:parentActivityName="com.example.historya.TrailsActivity"
+            android:name="com.example.historya.MarkerActivity" 
+            android:screenOrientation="portrait"></activity>
+        
+        
+        <!--  Location Activity -->
+        <activity android:name="com.example.historya.LocationActivity" 
+            android:screenOrientation="portrait"/>
+        
+        <activity 
+            android:parentActivityName="com.example.historya.LocationActivity"
+            android:name="com.example.historya.ImageActivity"></activity>
+        
+        <activity
+            android:parentActivityName="com.example.historya.LocationActivity"
+            android:name="com.example.historya.MusicActivity">
+        </activity>
+        
+        <activity
+            android:parentActivityName="com.example.historya.LocationActivity"
+            android:name="com.example.historya.VideoActivity"
+            android:configChanges="orientation"
+ 			>
+        </activity>
+        
+        <!--  Map Activity -->
+        <activity android:name="com.example.historya.MapActivity" />
+        
+        <activity
+            android:name="com.example.historya.LogOutActivity">
+        </activity>
+        
+    </application>
+
+</manifest>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+     <FrameLayout
+        android:id="@+id/fl_marker_trails"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true">
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/marker_linearlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/fl_marker_trails"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="38dp"
+        android:orientation="vertical" >
+                
+        <TextView
+            android:id="@+id/marker_scan"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="30dp"
+            android:layout_alignParentLeft="true"
+			android:text="GO to camera"
+            android:textColor="@color/red"
+            android:textSize="@dimen/activity_vertical_margin"  />
+
+    </LinearLayout>
+        <Button
+        android:id="@+id/markerButton02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/marker_linearlayout"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/button_style"
+        android:minWidth="100dp"
+        android:text="Partner Link"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/markerButton01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/markerButton02"
+        android:layout_below="@+id/markerButton02"
+        android:background="@drawable/button_style"
+        android:minWidth="100dp"
+        android:text="Partner Link"
+        android:textSize="10sp"/>
+
+    <Button
+        android:id="@+id/markerbutton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/markerButton01"
+        android:layout_below="@+id/markerButton01"
+        android:background="@drawable/button_style"
+        android:minWidth="100dp"
+        android:text="Partner Link"
+        android:textSize="10sp" />
+
+    <ImageView
+        android:id="@+id/interestimageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/markerbutton1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/markerbutton1"
+        android:layout_below="@+id/markerbutton1"
+        android:adjustViewBounds="true"
+        android:src="@drawable/morefun_logo" />
+    
+
+</RelativeLayout>
